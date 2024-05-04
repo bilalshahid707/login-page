@@ -1,3 +1,4 @@
+/* ************************************CSS RESET****************************** */
 *{
     margin: 0;
     padding: 0;
@@ -9,8 +10,8 @@
 }
 body,
 html {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 body {
     background-color: var(--color-bg);
@@ -19,10 +20,12 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
+
 }
 html {
     font-size: 62.5%;
 }
+/* ************************************GENERAL CLASSES****************************** */
 .flex {
     display: flex;
     justify-content: center;
@@ -46,6 +49,7 @@ span{
     -moz-box-shadow: -4px 20px 24px -17px rgba(0, 0, 0, 1);
     box-shadow: -4px 20px 24px -17px rgba(0, 0, 0, 1);
 }
+/* ************************************LOGIN PANEL****************************** */
 .login-panel{
     flex-direction: column;
     flex: 0.7;
@@ -56,20 +60,23 @@ span{
     align-items: flex-start;
     padding: 0 5.2rem 0 5.2rem;
     transform: translateX(-200%);
-    transition: all 1s;
+    transition: all 0.5s;
     transition-delay: 1s;
+    z-index: 1;
 }
 .icons{
     gap: 2rem;
 }
 .icon{
     font-size: 2.5rem;
-    color: var(--color-secondary);
+    color: white;
     transition: all 0.3s;
 }
 .icon:hover{
     transform: scale(1.1);
+    color: var(--color-secondary);
 }
+/* LOGIN FORM */
 .login-form {
     flex-direction: column;
     align-items: flex-start;
@@ -80,7 +87,6 @@ span{
     position: relative;
     width: 100%;
 }
-
 .input-data {
     top: 0;
     left: 0;
@@ -107,7 +113,6 @@ span{
     padding:0 0.5rem;
     z-index: 111;
 }
-
 .input-data:focus,
 .input-data:not(:placeholder-shown):not(:focus) {
     box-shadow: inset 0 0 0 2px var(--color-secondary);
@@ -122,6 +127,18 @@ span{
     background-color: var(--color-bg);
     color: var(--color-secondary);
 }
+.visibility-icon{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    cursor: not-allowed;
+    font-size: 1.2rem;
+}
+.input-data:focus ~ .visibility-icon,
+.input-data:not(:placeholder-shown):not(:focus) ~ .visibility-icon{
+    cursor: pointer;
+}
+/* ******** */
 
 .btn{
     width: 100%;
@@ -137,18 +154,37 @@ span{
     box-shadow: inset 0 0 0 2px var(--color-secondary);
     background: none;
 }
+/* ******************************************************************************* */
+
+/* ************************************HERO  PANEL****************************** */
 .hero-panel{
     flex: 1;
-    background-color: var(--color-secondary);
+    background-color: #ad40f3;
     height: 100%;
     width: 100%;
     padding: 4.8rem;
     transform: translateX(200%);
-    transition: all 1s;
+    transition: all 0.5s;
+    position: relative;
+}
+.hero-panel::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 5rem;
+    border: 10px solid #1b1b1b;
+    transform: rotate(45deg);
+    bottom: -25rem;
+    left:15rem;
 }
 .hero-msg{
     font-size: 4.2rem;
     transform: translateX(200%);
-    transition: all 1s;
+    transition: all 0.5s;
     transition-delay: 0.5s;
+    position: relative;
 }
+/* ******************************************************************************* */
+
+/* Seeking advice to level up as a beginner! 🚀 Any recommendations or suggestions to improve my coding skills are warmly welcomed. */

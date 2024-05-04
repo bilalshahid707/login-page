@@ -1,7 +1,7 @@
 
 @media (max-width: 1024px) {
     body {
-        margin: 4.8rem;
+        padding: 4.8rem;
     }
     html {
         font-size: 56.25%;
@@ -14,6 +14,9 @@
     }
 }
 @media (max-width: 768px) {
+    html {
+        font-size: 43.75%;
+    }
     .login-panel{
         flex: 0.8;
         padding: 0 3.2rem 0 3.2rem;
@@ -22,29 +25,32 @@
         padding: 2.8rem;
     }
 }
+
 @media (max-width: 568px) {
     .container{
         flex-direction: column-reverse;
-        flex-flow: column-reverse;
         height: max-content;
     }
     .login-panel{
-        padding: 3.2rem;
+        padding: 4.2rem 3.2rem;
         align-items: center;
-        border-radius: 2rem;
-        z-index: 1;
     }
     .hero-panel{
         text-align: center;
-        padding: 5.2rem;
+        padding: 5.2rem 2.8rem;
     }
 
 }
-@media (max-width: 368px) {
+
+@media (max-width: 435px) {
     html{
         font-size: 43.75%;
     }
+    .container{
+        width: 95%;
+    }
 }
+
 @media (max-width: 268px) {
     html{
         font-size: 31.25%;
