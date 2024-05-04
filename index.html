@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container flex" >
+        <div class="login-panel flex">
+            <h1 class="primary-heading">
+                Login
+            </h1>
+            <span>Log in with</span>
+            <div class="icons flex">
+                <a href="" class="icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="" class="icon"><ion-icon name="logo-google"></ion-icon></a>
+                <a href="" class="icon"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <form action="" class="login-form flex">
+                <div class="input-field">
+                    <input type="email" id="email" placeholder=" " autocomplete="off" class="input-data" required>
+                    <label for="email" class="input-label">Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="password" placeholder=" " autocomplete="off" class="input-data" required>
+                    <label for="password" class="input-label">Password</label>
+                </div>
+            </form>
+            <span>Forgot Password?</span>
+            <button class="btn">Login</button>
+
+        </div>
+        <div class="hero-panel">
+            <p class="hero-msg">Welcome to Login Page</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
